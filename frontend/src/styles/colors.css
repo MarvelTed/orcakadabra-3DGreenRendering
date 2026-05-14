@@ -1,0 +1,13 @@
+@theme {
+    /* Main color */
+    --color-brand-green: #A4B465;
+    --color-brand-dark: #626F47;
+    --color-background: #F5ECD5;
+    --color-background-detail: #F0BB78;
+
+    --color-surface-container: #171717;
+    --color-on-surface: #e5e5e5;
+
+    --color-success: #22c55e;
+    --color-error: #ef4444;
+}
