@@ -4,7 +4,7 @@
     --color-brand-green-light: #4CAF50;
     --color-brand-green-dark: #1B5E2F;
     
-    /* Background Colors - Light Yellow */
+    /* Background Colors - Light Yellow */ 
     --color-background: #FFFAF0;
     --color-background-secondary: #FFF8E7;
     --color-background-tertiary: #FFF5DC;
@@ -34,4 +34,8 @@
     --color-hover-green: #3D8B40;
     --color-hover-neutral: #F0E8DE;
     --color-active-green: #1B5E2F;
+}
+
+.starter-input::placeholder {
+    color: var(--color-text-light);
 }

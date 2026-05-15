@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import NewProjectCard from "./NewProjectCard";
 
 export default function StartNewProject() {
   return (
@@ -6,29 +6,19 @@ export default function StartNewProject() {
       <h2 className="text-xl font-semibold mb-4" style={{ color: 'var(--color-brand-green)' }}>
         Start a new project
       </h2>
-      <div className="flex gap-4">
-        <Link
-          to="/workshop"
-          className="flex flex-col items-center justify-center w-40 h-32 rounded-xl transition cursor-pointer"
-          style={{
-            backgroundColor: 'var(--color-background-secondary)',
-            border: '2px solid var(--color-brand-green-light)',
-            color: 'var(--color-brand-green)',
-          }}
-          onMouseEnter={(e) =>
-            (e.currentTarget.style.backgroundColor = 'var(--color-background-tertiary)')
-          }
-          onMouseLeave={(e) =>
-            (e.currentTarget.style.backgroundColor = 'var(--color-background-secondary)')
-          }
-        >
-          <span className="text-3xl mb-2" style={{ color: 'var(--color-brand-green)' }}>
-            +
-          </span>
-          <span className="text-sm font-medium" style={{ color: 'var(--color-brand-green)' }}>
-            Blank Canvas
-          </span>
-        </Link>
+      <div className="flex justify gap-4">
+        <NewProjectCard
+          title = "Blank Space"
+        />
+        <NewProjectCard
+          title = "Rumah Alvin"
+        />
+        <NewProjectCard
+          title = "Rumah Budhi"
+        />
+        <NewProjectCard
+          title = "Rumah Raymond"
+        />
       </div>
     </section>
   );

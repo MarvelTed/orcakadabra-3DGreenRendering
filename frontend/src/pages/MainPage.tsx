@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Header from '../components/Header';
 import StartNewProject from '../components/StartNewProject';
 import RecentProjects from '../components/RecentProjects';
@@ -11,7 +10,7 @@ const DUMMY_PROJECTS = [
 ];
 
 export default function MainPage() {
-  const [projects, setProjects] = useState(DUMMY_PROJECTS);
+  const projects = DUMMY_PROJECTS;
 
   return (
     <div className="min-h-screen text-opacity-100 p-8" style={{ backgroundColor: 'var(--color-background)', color: 'var(--color-text-primary)' }}>
