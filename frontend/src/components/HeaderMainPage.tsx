@@ -1,4 +1,4 @@
-export default function Header() {
+export default function HeaderMainPage() {
   return (
     <header className="flex items-center justify-between mb-12">
       <h1 className="text-2xl font-bold" style={{ color: 'var(--color-brand-green)' }}>

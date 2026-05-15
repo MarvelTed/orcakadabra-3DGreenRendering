@@ -67,7 +67,7 @@ export default function WorkshopRightBar({
 
         {/* Section 2: Green Solution */}
         <div className="space-y-4">
-          <div className="space-y-2">
+          <div className="space-y-0">
             <div className="text-sm font-medium uppercase tracking-wide" style={{ color: 'var(--color-brand-green-light)' }}>
               Green Solution
             </div>

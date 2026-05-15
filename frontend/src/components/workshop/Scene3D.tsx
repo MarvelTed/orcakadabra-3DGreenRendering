@@ -1,7 +1,6 @@
 import { Component, type ReactNode } from 'react';
 import { useGLTF, OrbitControls } from '@react-three/drei';
 
-// Custom 3D Model Component
 function Model({ url, position }: { url: string; position: [number, number, number] }) {
   const { scene } = useGLTF(url);
   return <primitive object={scene} position={position} />;

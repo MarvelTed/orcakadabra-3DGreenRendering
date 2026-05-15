@@ -1,4 +1,4 @@
-import Header from '../components/Header';
+import HeaderMainPage from '../components/HeaderMainPage';
 import StartNewProject from '../components/StartNewProject';
 import RecentProjects from '../components/RecentProjects';
 import { useRecentProjects } from '../hooks/useRecentProjects';
@@ -9,7 +9,7 @@ export default function MainPage() {
 
   return (
     <div className="min-h-screen text-opacity-100 p-8" style={{ backgroundColor: 'var(--color-background)', color: 'var(--color-text-primary)' }}>
-      <Header />
+      <HeaderMainPage />
       <StartNewProject />
       <RecentProjects projects={projects} />
 
