@@ -8,17 +8,21 @@ export default function StartNewProject() {
       </h2>
       <div className="flex justify gap-4">
         <NewProjectCard
-          title = "Blank Space"
+          title="Blank Space"
+          to="/workshop?id=blank"
+        />
+        {/* <NewProjectCard
+          title="Rumah Alvin"
+          to="/workshop"
         />
         <NewProjectCard
-          title = "Rumah Alvin"
+          title="Rumah Budhi"
+          to="/workshop"
         />
         <NewProjectCard
-          title = "Rumah Budhi"
-        />
-        <NewProjectCard
-          title = "Rumah Raymond"
-        />
+          title="Rumah Raymond"
+          to="/workshop"
+        /> */}
       </div>
     </section>
   );

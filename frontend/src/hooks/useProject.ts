@@ -7,9 +7,10 @@ export function useProject(projectId: string | null) {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!projectId) {
-      setError('No project ID provided');
+    if (!projectId || projectId === 'blank') {
       setLoading(false);
+      setError(null);
+      setProjectData(null);
       return;
     }
 
