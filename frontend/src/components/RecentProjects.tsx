@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Search } from 'lucide-react';
 
 interface Project {
-  id: number;
+  id: string;
   title: string;
   date: string;
   thumbnail: string;

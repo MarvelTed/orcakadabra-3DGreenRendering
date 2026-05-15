@@ -71,3 +71,28 @@ export default defineConfig([
   },
 ])
 ```
+
+## Installing all necessary npm needed.
+# 1. Membuat folder proyek 'frontend' dengan template React TypeScript melalui Vite
+npm create vite@latest frontend -- --template react-ts
+
+# 2. Masuk ke dalam direktori frontend
+cd frontend
+
+# 3. Menginstal dependensi dasar bawaan Vite
+npm install
+
+# 4. Menginstal library inti untuk 3D Rendering (Three.js & React Three Fiber)
+npm install three @react-three/fiber @react-three/drei
+
+# 5. Menginstal React Router untuk sistem navigasi halaman (Main Page & Workshop)
+npm install react-router-dom
+
+# 6. Menginstal Supabase SDK untuk integrasi database dan penyimpanan cloud
+npm install @supabase/supabase-js
+
+# 7. Menginstal Lucide React untuk pustaka ikon UI (Search, Upload, dll)
+npm install lucide-react
+
+# 8. Menginstal plugin resmi Tailwind CSS v4 untuk Vite (Development Dependency)
+npm install -D @tailwindcss/vite

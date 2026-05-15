@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
+
 interface ProjectCardProps {
-  id: number;
+  id: string;
   title: string;
   date: string;
   thumbnail: string;
@@ -7,7 +9,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ id, title, date, thumbnail }: ProjectCardProps) {
   return (
-    <div key={id} className="group cursor-pointer">
+    <Link to={`/workshop?id=${id}`} className="group block cursor-pointer">
       {/* Thumbnail */}
       <div
         className="w-full aspect-video rounded-xl overflow-hidden mb-3 border-2 transition"
@@ -38,6 +40,6 @@ export default function ProjectCard({ id, title, date, thumbnail }: ProjectCardP
       <p className="text-xs" style={{ color: 'var(--color-text-light)' }}>
         {date}
       </p>
-    </div>
+    </Link>
   );
 }
